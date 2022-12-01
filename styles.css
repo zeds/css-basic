@@ -32,3 +32,27 @@
 	background: purple;
 	width: 72px;
 }
+.button {
+  display: flex;
+	width: 62px;
+	height: 36px;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+	background: #ff333f;
+	border: none;
+	border-radius: 4px;
+}
+
+/*.button:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}*/
+
+.button-text {
+  margin-left: 3px;
+  font-family: sans-serif;
+  font-weight: bold;
+	color: white;
+}
+
