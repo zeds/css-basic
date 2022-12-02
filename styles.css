@@ -4,12 +4,12 @@
 	box-sizing: border-box;
 }
 .container {
-	background: gray;
+	/*background: gray;*/
 	width: 100vw;
 	height: 100vh;
 }
 .parent {
-	background: red;
+	/*background: red;*/
 	height: 64px;
 	display: flex;
 	justify-content: space-between;
@@ -23,13 +23,13 @@
 
 }
 .menu_right {
-	background: yellow;
+	/*background: yellow;*/
 	display: flex;
 	align-items: center;
 
 }
 .menu_item {
-	background: purple;
+	/*background: purple;*/
 	width: 72px;
 }
 
