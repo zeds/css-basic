@@ -1,0 +1,134 @@
+/*https://www.cdnfonts.com/helvetica-neue-9.font*/
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*background-color: green;*/
+}
+li, a, button {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+
+}
+.left-container {
+	display: flex;
+	/*background: blue;*/
+	justify-content: flex-start;
+}
+.logo {
+	cursor: pointer;
+}
+.search {
+	height: 34px;
+	width: 524px;
+	background: rgb(245,245,245);
+	border: 1px solid rgb(204,204,204);
+	border-radius: 4px;
+	padding: 0 16px;
+	margin-left: 24px; 
+	font-size: 15px;
+	/*rgb(204,204,204);*/
+	/*color: red; */
+
+}
+
+.search-button {
+	height: 28px;
+	width: 28px;
+	background: rgb(245,245,245);
+	/*background: orange;*/
+	border: none;
+	/*border: 1px solid rgb(204,204,204);*/
+	border-left: 1px solid rgb(245,245,245);
+	border-radius: 4px;
+	margin-left: -35px;
+	margin-top: 3px;
+
+	border-top-left-radius : 0px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-bottom-left-radius : 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+}
+
+.search-button:hover {
+  opacity: 0.5;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+nav {
+	display: flex;
+	align-items: center;
+}
+.nav__links {
+	list-style: none;
+}
+.nav__links li {
+	height: 100%;
+	/*background: blue;*/
+	display: inline-block;
+	/*display: flex;*/
+	padding: 0px 3px;
+}
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+	color: #333333;
+	/*background: red;*/
+	padding: 8px 4px;;
+	border-radius: 4px;
+	margin: 0 2px;
+}
+
+.nav__links li a:hover {
+	background: #f2f2f2;
+}
+
+.cta button {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	background-color: #ff333f;
+	color: white;
+	cursor: pointer;
+	/*fill: white;*/
+	font-size: 14px;
+	font-weight: 700;
+	/*height: 36px;*/
+	justify-content: center;
+	/*line-height: 19.6px;*/
+	/*min-height: 32px;
+	min-width: 60px;*/
+	/*text-align: center;
+	text-decoration-color: white;
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	text-decotation-thickness: auto;*/
+	/*transition-duration: 0.1s;
+	transition-property: background-color color fill;
+	transition-timing-function:*/
+	transition: all 0.1s ease 0s;
+	/*width: 62px;*/
+
+
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+
+
+}
+.cta button:hover {
+	background-color: #FC4C62;
+}

@@ -1,0 +1,85 @@
+/*https://www.cdnfonts.com/helvetica-neue-9.font*/
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: gray;
+}
+li, a, button {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: red;
+	text-decoration: none;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+
+}
+.logo {
+	cursor: pointer;
+}
+.nav__links {
+	list-style: none;
+}
+.nav__links li {
+	height: 100%;
+	background: white;
+	display: inline-block;
+	padding: 0px 20px;
+}
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+	color: blue;
+}
+button {
+	/*width: 62px;
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;*/
+
+	display: flex;
+	align-items: center;
+	background-color: #ff333f;
+	color: white;
+	cursor: pointer;
+	fill: white;
+	font-size: 14px;
+	font-weight: 700;
+	height: 36px;
+	justify-content: center;
+	line-height: 19.6px;
+	min-height: 32px;
+	min-width: 60px;
+	text-align: center;
+	text-decoration-color: white;
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	text-decotation-thickness: auto;
+	/*transition-duration: 0.1s;
+	transition-property: background-color color fill;
+	transition-timing-function:*/
+	transition: all 0.1s ease 0s;
+	width: 62px;
+
+
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+
+
+}
+button:hover {
+	background-color: #FC4C62;
+}
