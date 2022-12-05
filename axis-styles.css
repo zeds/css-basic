@@ -10,9 +10,9 @@
 	height: 100vh;
 	padding: 20px;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+	/*flex-direction: row;
+	justify-content: stretch;*/
+	align-items: flex-end;
 
 }
 .item {
@@ -29,7 +29,7 @@
 }
 .two {
 	background: blue;
-	background-image: url("./jacket.jpg")
+	background-image: url("https://o.imgz.jp/pc/cms/homebanner/744f8cd4264d441f840557edebd407c4.jpg");
 }
 .three {
 	background: green;
