@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Fira Sans', sans-serif;
+}
+html {
+	font-size: 16px;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.box-blue {
+	width: 100vw;
+	height: 100vh;
+	background: blue;
+
+	@media ( 0px < width) {
+		.media-color {
+			background: green;
+		}
+	}
+	@media ( 640px < width ) {
+		.media-color {
+			background: orange;
+		}
+	}
+	@media ( 768px < width ) {
+		.media-color {
+			background: blue;
+		}
+	}
+	@media ( 1024px < width ) {
+		.media-color {
+			background: yellow;
+		}
+	}
+
+	.box-red {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 40px 36px 64px 36px;
+		background: red;
+
+		.box-hero {
+			border: 2px solid black;
+		}
+	
+		//おすすめの商品
+		.heading-tab {
+			margin-top: 30px;
+		}
+
+		.item-parent {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-column-gap: 22px;
+			grid-row-gap: 10px;
+			background: green;
+
+
+			@media ( 0px < width) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+			@media ( 640px < width ) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@media ( 768px < width ) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+			@media ( 1024px < width ) {
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			
+			.item {
+				background-color: green;
+
+				//2行以上は非表示
+				//TODO 文字が1行分しかない時でも2行分の領域は確保したいが、1行分しか表示されない
+				.line_wrap {
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+				}
+
+
+				@media ( 0px < width) {
+					.line_wrap {
+						display: none;
+					}
+				}
+				@media ( 640px < width ) {
+					.line_wrap {
+						display: none;
+					}
+				}
+				@media ( 768px < width ) {
+					.line_wrap {
+						overflow: hidden;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+					}
+				}
+				@media ( 1024px < width ) {
+					.line_wrap {
+						overflow: hidden;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+					}
+				}
+			}
+		}
+	}
+}
+
