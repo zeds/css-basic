@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Fira Sans', sans-serif;
+}
+html {
+	font-size: 16px;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.blue-container {
+	background: blue;
+	width: 100vw;
+	height: 100vh;
+
+	@media ( 0px < width) {
+		.color-info {
+			background: pink
+		}
+	}
+	@media ( 640px < width) {
+		.color-info {
+			background: blue;
+		}
+	}
+	@media ( 1024px < width) {
+		.color-info {
+			background: green;
+		}
+	}
+	@media ( 1280px < width) {
+		.color-info {
+			background: yellow;
+		}
+	}
+	@media ( 1536px < width) {
+		.color-info {
+			background: red;
+		}
+	}
+	.red-container {
+		background: red;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 40px 36px 64px 36px;
+	}
+	
+	.item-parent {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 10px;
+
+		.item {
+			background: green;
+			//2行以上は非表示
+			//TODO 文字が1行分しかない時でも2行分の領域は確保したいが、1行分しか表示されない
+			.line_wrap {
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+			}
+		}
+
+	}
+
+}

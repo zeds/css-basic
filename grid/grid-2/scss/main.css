@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.blue-container {
+  background: blue;
+  width: 100vw;
+  height: 100vh;
+}
+@media (0px < width) {
+  .blue-container .color-info {
+    background: pink;
+  }
+}
+@media (640px < width) {
+  .blue-container .color-info {
+    background: blue;
+  }
+}
+@media (1024px < width) {
+  .blue-container .color-info {
+    background: green;
+  }
+}
+@media (1280px < width) {
+  .blue-container .color-info {
+    background: yellow;
+  }
+}
+@media (1536px < width) {
+  .blue-container .color-info {
+    background: red;
+  }
+}
+.blue-container .red-container {
+  background: red;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 36px 64px 36px;
+}
+.blue-container .item-parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+}
+.blue-container .item-parent .item {
+  background: green;
+}
+.blue-container .item-parent .item .line_wrap {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}/*# sourceMappingURL=main.css.map */

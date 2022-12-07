@@ -1,3 +1,7 @@
+$baseColor: blue;
+$mainColor: #ff0000;
+$subColor: #ff22ee;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,10 +16,19 @@ img {
 	max-width: 100%;
 	max-height: 100%;
 }
-.box-blue {
+@mixin btn {
+	background: $subColor;
+	padding: 8px 10px 6px;
+	color: #fff;
+}
+
+.box-base {
 	width: 100vw;
 	height: 100vh;
-	background: blue;
+	background: $baseColor;
+
+	//@include btn;
+
 
 	@media ( 0px < width) {
 		.media-color {
@@ -63,16 +76,24 @@ img {
 
 			@media ( 0px < width) {
 				grid-template-columns: repeat(1, 1fr);
-			}
+				grid-column-gap: 1px;
+				grid-row-gap: 1px;
+				}
 			@media ( 640px < width ) {
-				grid-template-columns: repeat(2, 1fr);
-			}
+				grid-template-columns: repeat(3, 1fr);
+				grid-column-gap: 1px;
+				grid-row-gap: 1px;
+				}
 			@media ( 768px < width ) {
 				grid-template-columns: repeat(3, 1fr);
-			}
+				grid-column-gap: 22px;
+				grid-row-gap: 10px;
+				}
 			@media ( 1024px < width ) {
-				grid-template-columns: repeat(4, 1fr);
-			}
+				grid-template-columns: repeat(5, 1fr);
+				grid-column-gap: 22px;
+				grid-row-gap: 10px;
+				}
 
 			
 			.item {
