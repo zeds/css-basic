@@ -55,6 +55,23 @@ img {
 		grid-template-columns: repeat(5, 1fr);
 		grid-column-gap: 10px;
 
+		@media ( 0px < width) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@media ( 640px < width) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media ( 1024px < width) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media ( 1280px < width) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		@media ( 1536px < width) {
+			grid-template-columns: repeat(5, 1fr);
+		}
+	
+
 		.item {
 			background: green;
 			//2行以上は非表示
@@ -66,7 +83,5 @@ img {
 				-webkit-line-clamp: 2;
 			}
 		}
-
 	}
-
 }
