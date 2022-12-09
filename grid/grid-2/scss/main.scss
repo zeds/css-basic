@@ -82,11 +82,8 @@ html {
 				-webkit-box-orient: vertical;
 				-webkit-line-clamp: 2;
 
-				@media ( width < 760px ) {
+				@media ( width < 1000px ) {
 					display: none;
-				}
-				@media ( 759px < width) {
-					display: -webkit-box;
 				}
 			}
 		}

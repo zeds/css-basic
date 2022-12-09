@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Fira Sans', sans-serif;
+}
+html {
+	font-size: 16px;
+}
+.container {
+	background: gray;
+	width: 100vw;
+	height: 100vh;
+
+	.card-container {
+		background: blue;
+		width: 222.4px;
+		margin: 0 auto;
+		position: relative;
+
+		.price-background {
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			font-weight: 700;
+			height: 35px;
+			left: 0px;
+			top: 180px;
+			padding: 6px 8px 8px 8px;
+			color: white;
+			// 左上 右上 右下 左下
+			border-radius: 0px 15px 15px 0px;
+			//border-top-right-radius: 15px;
+			//border-bottom-right-radius: 15px;
+		}
+
+		.card-img {
+			background: red;
+			img {
+				width: 100%;
+			}
+		}
+	}	
+}
+

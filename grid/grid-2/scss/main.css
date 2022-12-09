@@ -84,13 +84,8 @@ html {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-@media (width < 760px) {
+@media (width < 1000px) {
   .blue-container .item-parent .item .line_wrap {
     display: none;
-  }
-}
-@media (759px < width) {
-  .blue-container .item-parent .item .line_wrap {
-    display: -webkit-box;
   }
 }/*# sourceMappingURL=main.css.map */
