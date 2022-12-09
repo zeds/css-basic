@@ -9,13 +9,7 @@ html {
   font-size: 16px;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .blue-container {
-  background: blue;
   width: 100vw;
   height: 100vh;
 }
@@ -45,7 +39,6 @@ img {
   }
 }
 .blue-container .red-container {
-  background: red;
   max-width: 1280px;
   margin: 0 auto;
   padding: 40px 36px 64px 36px;
@@ -53,7 +46,8 @@ img {
 .blue-container .item-parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 @media (0px < width) {
   .blue-container .item-parent {
@@ -80,12 +74,23 @@ img {
     grid-template-columns: repeat(5, 1fr);
   }
 }
-.blue-container .item-parent .item {
-  background: green;
+.blue-container .item-parent .item img {
+  width: 100%;
+  height: 100%;
 }
 .blue-container .item-parent .item .line_wrap {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+@media (width < 760px) {
+  .blue-container .item-parent .item .line_wrap {
+    display: none;
+  }
+}
+@media (759px < width) {
+  .blue-container .item-parent .item .line_wrap {
+    display: -webkit-box;
+  }
 }/*# sourceMappingURL=main.css.map */

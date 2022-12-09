@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.container {
+  background: gray;
+  padding: 20px;
+}
+.container .card {
+  background: #F3FDF6;
+  padding: 48px 32px;
+  font-size: 24px;
+  font-weight: 600;
+  border: 2px solid #AFF4C6;
+  border-radius: 12px;
+  width: 864px;
+  height: 1776px;
+  margin: 0 auto;
+}
+.container .card .profile {
+  background: #85E0A3;
+  height: 176px;
+  width: 100%;
+}
+.container .card .item-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 35px;
+}
+.container .card .item-parent .item {
+  background: #85E0A3;
+  margin-top: 28px;
+  height: 240px;
+}/*# sourceMappingURL=main.css.map */

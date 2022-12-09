@@ -8,13 +8,8 @@
 html {
 	font-size: 16px;
 }
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .blue-container {
-	background: blue;
+	//background: blue;
 	width: 100vw;
 	height: 100vh;
 
@@ -44,7 +39,7 @@ img {
 		}
 	}
 	.red-container {
-		background: red;
+		//background: red;
 		max-width: 1280px;
 		margin: 0 auto;
 		padding: 40px 36px 64px 36px;
@@ -53,7 +48,8 @@ img {
 	.item-parent {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-column-gap: 10px;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
 
 		@media ( 0px < width) {
 			grid-template-columns: repeat(1, 1fr);
@@ -73,14 +69,25 @@ img {
 	
 
 		.item {
-			background: green;
+			//background: green;
 			//2行以上は非表示
 			//TODO 文字が1行分しかない時でも2行分の領域は確保したいが、1行分しか表示されない
+			img {
+				width: 100%;
+				height: 100%;
+			}
 			.line_wrap {
 				overflow: hidden;
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
 				-webkit-line-clamp: 2;
+
+				@media ( width < 760px ) {
+					display: none;
+				}
+				@media ( 759px < width) {
+					display: -webkit-box;
+				}
 			}
 		}
 	}
