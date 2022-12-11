@@ -13,79 +13,121 @@ html {
   width: 100vw;
   height: 100vh;
 }
-@media (0px < width) {
-  .blue-container .color-info {
-    background: pink;
-  }
-}
-@media (640px < width) {
-  .blue-container .color-info {
-    background: blue;
-  }
-}
-@media (1024px < width) {
-  .blue-container .color-info {
-    background: green;
-  }
-}
-@media (1280px < width) {
-  .blue-container .color-info {
-    background: yellow;
-  }
-}
-@media (1536px < width) {
-  .blue-container .color-info {
-    background: red;
-  }
-}
 .blue-container .red-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 40px 36px 64px 36px;
 }
-.blue-container .item-parent {
+.blue-container .red-container .banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.blue-container .red-container .heading-tab {
+  color: rgb(100, 100, 100);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0 16px 0;
+}
+.blue-container .red-container .item-parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-@media (0px < width) {
-  .blue-container .item-parent {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.blue-container .red-container .item-parent .item {
+  position: relative;
 }
-@media (640px < width) {
-  .blue-container .item-parent {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (1024px < width) {
-  .blue-container .item-parent {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (1280px < width) {
-  .blue-container .item-parent {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (1536px < width) {
-  .blue-container .item-parent {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-.blue-container .item-parent .item img {
+.blue-container .red-container .item-parent .item img {
   width: 100%;
   height: 100%;
+  border-radius: 4px;
 }
-.blue-container .item-parent .item .line_wrap {
+.blue-container .red-container .item-parent .item .price-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  padding: 6px 8px 8px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+}
+.blue-container .red-container .item-parent .item .line_wrap {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  font-size: 14px;
 }
-@media (width < 1000px) {
-  .blue-container .item-parent .item .line_wrap {
+
+@media screen and (0 < width) {
+  .blue-container .color-info {
+    background: pink;
+  }
+  .blue-container .red-container .item-parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 1px;
+  }
+  .blue-container .red-container .item-parent .item .line_wrap {
     display: none;
+  }
+  .blue-container .red-container .item-parent .item .price-background {
+    top: 85%;
+  }
+}
+@media screen and (510px < width) {
+  .blue-container .color-info {
+    background: blue;
+  }
+  .blue-container .red-container .item-parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .blue-container .red-container .item-parent .item .line_wrap {
+    display: none;
+  }
+  .blue-container .red-container .item-parent .item .price-background {
+    top: 70%;
+  }
+}
+@media screen and (768px < width) {
+  .blue-container .color-info {
+    background: red;
+  }
+  .blue-container .red-container .item-parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .blue-container .red-container .item-parent .item .line_wrap {
+    display: none;
+  }
+  .blue-container .red-container .item-parent .item .price-background {
+    top: 80%;
+  }
+}
+@media screen and (1024px < width) {
+  .blue-container .color-info {
+    background: green;
+  }
+  .blue-container .red-container .item-parent {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .blue-container .red-container .item-parent .item .line_wrap {
+    display: -webkit-box;
+  }
+  .blue-container .red-container .item-parent .item .price-background {
+    top: 65%;
+  }
+}
+@media screen and (1280px < width) {
+  .blue-container .color-info {
+    background: yellow;
+  }
+  .blue-container .red-container .item-parent {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .blue-container .red-container .item-parent .item .line_wrap {
+    display: -webkit-box;
   }
 }/*# sourceMappingURL=main.css.map */

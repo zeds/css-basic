@@ -1,0 +1,59 @@
+<!--https://www.youtube.com/watch?v=-edJzAa54q4&list=PLldYJFgA6aTqJS-O9sI2QPI53uoIF0XAT&index=12&t=6s-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inline-flex</title>
+	<style>
+		* {box-sizing: border-box;} /*include padding and border but don't include margin*/
+		body {
+			padding: 25px;
+			font: 17px;
+			font-family: Arial, sans-serif;
+			color: #777777;
+		}
+		.wrap {
+			/*display: flex;*/
+			display: inline-flex;
+			padding: 15px;
+			border: 3px solid #777777;
+			border-radius: 5px;
+			margin-bottom: 1.5em;
+		}
+		.item {
+			width: 100px;
+			height: auto;
+			padding: 10px;
+			text-align: center;
+			margin: 0.5em;
+			background-color: rgb(160, 204, 160);
+			border: 2px solid #269900;
+		}
+		h1 {
+			padding: 15px;
+			border: 3px solid #777777;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Differences between display:flex and display:inline-flex</h1>
+	<div class="wrap">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<div class="wrap">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolor quo ad, facilis vitae ut explicabo cupiditate natus pariatur molestiae. Harum nesciunt eius facilis quod perferendis sequi cumque alias doloremque?</p>
+</body>
+</html>
