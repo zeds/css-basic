@@ -47,7 +47,7 @@ button {
 }
 .wrapper header .left-container .search {
   display: flex;
-  width: 584px;
+  width: 540px;
   height: 100%;
   align-items: center;
 }
@@ -185,6 +185,16 @@ button {
   .wrapper .color-info {
     background: pink;
   }
+  .wrapper header .left-container .search {
+    display: none;
+  }
+  .wrapper header .left-container button {
+    position: static;
+    margin-left: 200px;
+  }
+  .wrapper header nav {
+    display: none;
+  }
   .wrapper .red-container .item-parent {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 3px;
@@ -201,6 +211,16 @@ button {
   .wrapper .color-info {
     background: blue;
   }
+  .wrapper header .left-container .search {
+    display: none;
+  }
+  .wrapper header .left-container button {
+    position: static;
+    margin-left: 200px;
+  }
+  .wrapper header nav {
+    display: none;
+  }
   .wrapper .red-container .item-parent {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -215,6 +235,9 @@ button {
   .wrapper .color-info {
     background: red;
   }
+  .wrapper header nav {
+    display: flex;
+  }
   .wrapper .red-container .item-parent {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -228,6 +251,17 @@ button {
 @media screen and (1024px < width) {
   .wrapper .color-info {
     background: green;
+  }
+  .wrapper header .left-container .search {
+    display: flex;
+    width: 540px;
+    height: 100%;
+    align-items: center;
+  }
+  .wrapper header .left-container button {
+    position: absolute;
+    top: 16px;
+    right: 0px;
   }
   .wrapper .red-container .item-parent {
     grid-template-columns: repeat(5, 1fr);

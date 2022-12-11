@@ -52,7 +52,7 @@ button {
 			}
 			.search {
 				display: flex;
-				width: 584px;
+				width: 540px;
 				height: 100%;
 				align-items: center;
 
@@ -229,6 +229,21 @@ button {
 		.color-info {
 			background: pink
 		}
+		header {
+			.left-container {
+				.search {
+					display: none;
+				}
+				button {
+					position: static;
+					margin-left: 200px;
+				}
+			}
+			nav {
+				display: none;
+			}
+
+		}
 		.red-container {
 			.item-parent {
 				grid-template-columns: repeat(1, 1fr);
@@ -251,6 +266,20 @@ button {
 		.color-info {
 			background: blue;
 		}
+		header {
+			.left-container {
+				.search {
+					display: none;
+				}
+				button {
+					position: static;
+					margin-left: 200px;
+				}
+			}
+			nav {
+				display: none;
+			}
+		}
 		.red-container {
 			.item-parent {
 				grid-template-columns: repeat(3, 1fr);
@@ -270,6 +299,11 @@ button {
 	.wrapper {
 		.color-info {
 			background: red;
+		}
+		header {
+			nav {
+				display: flex;
+			}
 		}
 		.red-container {
 			.item-parent {
@@ -291,6 +325,23 @@ button {
 		.color-info {
 			background: green;
 		}
+		header {
+			.left-container {
+				.search {
+					display: flex;
+					width: 540px;
+					height: 100%;
+					align-items: center;
+				}
+				button {
+					position: absolute;
+					top: 16px;
+					right: 0px;
+				}
+
+			}
+		}
+
 		.red-container {
 			.item-parent {
 				grid-template-columns: repeat(5, 1fr);
