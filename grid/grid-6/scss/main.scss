@@ -123,26 +123,17 @@ button {
 			}
 		}
 	}
-
+	
 	.tab-container {
-		//background: lightgray;
-		width: 100%;
-		height: 44px;
-		display: flex;
-		justify-content: flex-start;
-		padding: 0 36px;
-		border-bottom: solid;
-		border-color: lightgray;
-		border-width: 1px;
-
+		//background: blue;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0px 36px;
 
 		.nav-links {
 			li {
-				//background: red;
 				display: inline-block;
-				//width: 72px;
 				padding: 10px 30px;
-
 				a {
 					font-weight: bold;
 				}
@@ -158,6 +149,18 @@ button {
 				background: #F2F2F2;
 			}
 		}
+
+	}
+	.line-container {
+		//background: lightgray;
+		width: 100%;
+		height: 1px;
+		display: flex;
+		//justify-content: flex-start;
+		//padding: 0 36px;
+		border-bottom: solid;
+		border-color: lightgray;
+		border-width: 1px;
 	}
 
 	.red-container {
