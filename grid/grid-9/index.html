@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing:border-box;
+		}
+		.container {
+			background: lightgray;
+			width: 800px;
+			height: 800px;
+			border: 2px solid black;
+			/*box-shadow: inset 0 0 0 10px green;*/
+			margin: 0 auto;
+			/*display: flex;
+			justify-content: space-around;*/
+			position: relative;
+
+		}
+		.item {
+			width: 100px;
+			height: 100px;
+		}
+		.purple {
+			background: purple;
+			position: sticky;
+			width: 800px;
+			top: 0;
+			color: white;
+		}
+		.orange {
+			background: orange;
+		}
+		.yellow {
+			background: yellow;
+			position: absolute;
+			width: 200px;
+			/*top bottom left right*/
+			left: 0;
+			bottom: 10%;
+			font-size: 40px;
+		}
+		.red {
+			background: red;
+			position: fixed;
+			right: 0;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item purple">
+			LOGO navigation
+		</div>
+		<div class="item orange"></div>
+		<div class="item yellow">
+			¥8,000
+		</div>
+		<div class="item red"></div>
+	</div>
+</body>
+</html>

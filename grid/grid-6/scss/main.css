@@ -30,6 +30,9 @@ button {
   height: 100vh;
 }
 .wrapper header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   padding: 0 36px;
   width: 100%;

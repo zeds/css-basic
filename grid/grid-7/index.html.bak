@@ -1,0 +1,40 @@
+<!--https://codepen.io/tecchan/pen/dypXMxo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+        <div class="container">
+            <div class="item">
+                <div class="contents">item-1</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-2</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-3</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-4</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-5</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-6</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-7</div>
+            </div>
+            <div class="item">
+                <div class="contents">item-8</div>
+            </div>
+        </div>
+</body>
+</html>

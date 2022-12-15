@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	background: green;
+	width: 100vw;
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	.item-2 {
+		margin: 5px 3px 1px 40px;
+		background: brown;
+		border: 20px solid lightblue;
+		padding: 10px;
+	
+		box-shadow: inset 0 0 0 10px yellow;
+		img {
+			width: 100%;
+		}
+
+
+	}
+
+	.item-1 {
+		margin: 5px 3px 1px 40px;
+		background: green;
+		border: 20px solid lightblue;
+		padding: 10px;
+	
+		box-shadow: inset 0 0 0 10px yellow;
+
+
+	}
+}
