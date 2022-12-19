@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	text-decoration: none;
+}
+
+.header {
+	height: 60px;
+}
+.header > .container {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+/*ナビヘッダー*/
+.list_nav_header {
+	display: flex;
+}
+
+.sidebar {
+	background: pink;
+	flex: 0 0 240px;
+}
+.main {
+	background: green;
+	flex: auto;
+	min-width: 10px;
+}
+
+.layout_page {
+	display: flex;
+}
