@@ -1,13 +1,39 @@
 * {
 	margin: 0;
 	padding: 0;
-
+	box-sizing: border-box;
 }
 
-li a {
+li, a {
 	color: #000;
-	text-decoration: none;
+  text-decoration: none;
+  list-style: none;
 }
+
+.btn_login {
+	color: blue;
+	height: 36px;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 15px 0 50px;
+	border: 1px solid  blue;
+	border-radius: 2px;
+	position: relative;
+}
+
+.btn_login:before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: gray;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%)
+}
+
 
 body {
 	height: 100vh;
@@ -22,9 +48,48 @@ body {
 	padding: 0 20px;
 }
 
+/*バーガー*/
+.button_burger {
+	width: 40px;
+	height: 40px;
+	background: gray;
+}
+
+/*ロゴ*/
+.area_logo_header .logo {
+	display: block;
+	width: 80px;
+	height: 30px;
+	background: gray;
+}
+.area_logo_header {
+	margin: 0 0 0 10px;
+}
+
+/*フォームヘッダー*/
+.form_header {
+	margin: 0 auto;
+}
+
 /*ナビヘッダー*/
+.nav_header {
+	/*margin: 0 0 0 auto;*/
+}
 .list_nav_header {
 	display: flex;
+	align-items: center;
+
+}
+.list_nav_header > li + li {
+	margin:  0 0 0 15px;
+}
+
+/*a要素だが、class="btn_login"には適用しない*/
+.list_nav_header a:not(.btn_login) {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: gray;
 }
 
 .sidebar {
@@ -41,8 +106,8 @@ body {
 .list_nav_sidebar a {
 	display: flex;
 	align-items: center;
-	height: 40px;
-	padding: 0 0 0 60px;
+	height: 48px;
+	padding: 0 0 0 70px;
 	position: relative;
 }
 .list_nav_sidebar a:before {
@@ -50,18 +115,52 @@ body {
 	display: block;
 	width: 28px;
 	height: 28px;
+	border-radius: 50%;
 	background: gray;
 	position: absolute;
 	top: 50%;
 	left: 30px;
 	transform: translateY(-50%)
 }
+/*サイドバーログイン*/
+.area_register_sidebar {
+	padding: 10px 30px;
+}
+.area_register_sidebar .description {
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.area_register_sidebar .wrap_btn {
+	margin-top: 10px;
+}
 
+/*メイン*/
 .main {
-	background: green;
+	background: #f9f9f9;
 	flex: auto;
 	min-width: 10px;
+	padding: 30px;
 }
+.main .box {
+	padding: 30px 0;
+
+}
+.main .box + .box {
+	border-top: 3px solid #ccc;
+}
+
+/*ビデオリスト*/
+.list_video {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list_video > li {
+	background: #ccc;
+	width: 25%;
+}
+
+
 
 .layout_page {
 	display: flex;
