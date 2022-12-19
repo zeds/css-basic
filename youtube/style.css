@@ -137,40 +137,105 @@ body {
 /*メイン*/
 .main {
 	background: #f9f9f9;
-	/*flex: auto;*/
+	flex: auto;
 	min-width: 10px;
 	padding: 30px;
-	display: flex;
 }
 .main .box {
 	padding: 30px 0;
-
 }
 .main .box + .box {
-	/*border-top: 3px solid #ccc;*/
+	border-top: 3px solid #ccc;
+}.main .box .ttl {
+	font-size: 24px;
+	margin: 0 0 10px 0;
 }
+
 
 /*ビデオリスト*/
 .list_video {
 	display: flex;
 	flex-wrap: wrap;
+	margin: -8px;	//ふくらませてあげる
 }
 
 .list_video > li {
-	background: #ccc;
-	width: 25%:
+	padding: 8px;
+	width: 25%;
 }
+
 
 /*サムネイル 投稿画像*/
 .list_video .thumb {
 	width: 100%;
-	height: 200px;
 	background: red;
-	margin: 0 10px;
+}
+.list_video .thumb:before {
+	content: "";
+	display: block;
+	width: 100%;
+	padding-top: 56.25%;	// 16:9の比率 9÷16x100=56.25
+}
+
+/*レイアウト（アイキャッチとテキストを横並びにする）*/
+.list_video .layout {
+	display: flex;
+	margin: 10px 0 0 ;
+}
+.list_video .eye {
+	flex: 0 0 40px;
+	margin: 0 10px 0 0;
+}
+
+/*アイキャッチ*/
+.list_video .img {
+	width: 100%;
+	border-radius: 50%;
+	background: pink;
+}
+.list_video .img:before {
+	content: "";
+	display: block;
+	width: 100%;
+	padding-top: 100%;
+}
+
+/*テキスト*/
+.list_video .text {
+	flex: auto;	//広がって欲しいのでauto
+	min-width: 10px;
+}
+.list_video .text .ttl {
+/*2行以上は「...」で表示	*/
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 15px;
+}
+.list_video .text .user {
+	/*1行以上は「...」で表示	*/
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	font-size: 14px;
+}
+
+.list_video .text .count {
+	/*1行以上は「...」で表示	*/
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	font-size: 13px;
 }
 
 
 
+
+
+/*ページレイアウト*/
 .layout_page {
 	display: flex;
 }
