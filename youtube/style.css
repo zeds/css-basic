@@ -1,12 +1,17 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 li a {
+	color: #000;
 	text-decoration: none;
 }
 
+body {
+	height: 100vh;
+}
 .header {
 	height: 60px;
 }
@@ -23,9 +28,35 @@ li a {
 }
 
 .sidebar {
-	background: pink;
 	flex: 0 0 240px;
 }
+.sidebar .box {
+	padding: 10px 0;
+}
+.sidebar .box + .box {
+	border-top: 1px solid #ccc;
+}
+
+/*サイドバーナビリスト*/
+.list_nav_sidebar a {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding: 0 0 0 60px;
+	position: relative;
+}
+.list_nav_sidebar a:before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: gray;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%)
+}
+
 .main {
 	background: green;
 	flex: auto;
