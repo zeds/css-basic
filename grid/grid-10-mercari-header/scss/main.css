@@ -5,13 +5,32 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 
+li, a {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .wrapper {
-  background: yellow;
   width: 100vw;
   height: 2000px;
 }
 .wrapper header {
-  background: green;
+  background: white;
   width: 100%;
   height: 64px;
   padding: 0 36px;
@@ -21,28 +40,143 @@
   position: sticky;
   top: 0;
 }
-.wrapper header .logo {
-  background: red;
+.wrapper header .nav_search {
+  display: inline-flex;
+  align-items: center;
+}
+.wrapper header .nav_search .logo {
   width: 110px;
 }
+.wrapper header .nav_search .logo img {
+  width: 100%;
+}
+.wrapper header .nav_search .center_section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding-left: 24px;
+}
+.wrapper header .nav_search .center_section input {
+  background: #F5F5F5;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0 16px;
+  color: blue;
+  width: 560px;
+  height: 34px;
+}
+.wrapper header .nav_search .center_section button {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  color: gray;
+  padding: 3px;
+}
 .wrapper header nav {
-  background: blue;
   height: 100%;
   display: flex;
   padding: 5px;
   align-items: center;
 }
-.wrapper header nav .nav-link li {
-  background: red;
+.wrapper header nav .nav_link li {
   display: inline-block;
 }
-.wrapper header nav button {
-  background: pink;
+.wrapper header nav .nav_link li a {
+  display: flex;
+  padding: 8px;
 }
-.wrapper .product-container {
-  background: skyblue;
+.wrapper header nav .nav_link li :hover {
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+.wrapper header nav button {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: #ff333f;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  transition: all 0.1s ease 0s;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.wrapper header nav button:hover {
+  opacity: 0.5;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.wrapper .tab_container {
+  background: white;
+  height: 45px;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 64px;
+}
+.wrapper .tab_container .tab_pannel {
+  max-width: 1280px;
+  padding: 0 43px;
+  height: 100%;
+  margin: 0 auto;
+}
+.wrapper .tab_container .tab_pannel li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.wrapper .tab_container .tab_pannel li a {
+  font-weight: bold;
+  color: #666;
+}
+.wrapper .tab_container .tab_pannel li.is-active {
+  border-bottom: solid;
+  border-color: red;
+  border-width: 3px;
+}
+.wrapper .tab_container .tab_pannel li.is-active a {
+  color: red;
+}
+.wrapper .tab_container .tab_pannel li:hover {
+  background: #F2F2F2;
+}
+.wrapper .product_container {
+  background: white;
   max-width: 1280px;
   height: 1000px;
-  border: 3px solid red;
   margin: 0 auto;
+  padding: 40px 36px 64px;
+}
+.wrapper .product_container img {
+  width: 100%;
+  border-radius: 8px;
+}
+.wrapper .product_container section h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.wrapper .product_container section .grid_items {
+  background: red;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+h2 {
+  color: #666;
+  font-size: 20px;
+}
+
+h2::first-letter {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
