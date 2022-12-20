@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li, a, p {
+	color: #000;
+  text-decoration: none;
+  list-style: none;
+	font-size: 20px;
+}
+
+.container {
+	background: #eee;
+	width: 100vw;
+	height: 100%;
+	padding: 30px;
+	border: 10px solid red;
+}
+
+.price {
+	font-size: 20px;
+}
+.price span {
+	color: red;
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: -5px;
+}
+/*擬似要素を使う*/
+.p_price {
+	font-size: 20px;
+}
+.p_price:after {
+	content: '円';
+	color: red;
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: -5px;
+}
+.todo:before {
+	content: "私は、";
+	font-size: 20px;
+}
+.todo:after {
+	content: "をする。";
+	font-size: 20px;
+}
+p[data-unit]:after {
+	/*attrは指定した属性の値をとってきてくれる*/
+	content: attr(data-unit)"";
+}
+
+.list_apple li {
+	padding-left: 30px;
+	position: relative;
+}
+.list_apple li:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 5px;
+	background: red;
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+
+.list_browser li {
+	padding-left: 30px;
+	position: relative;
+}
+.list_browser li:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+}
+
+.list_browser .chrome:before {
+	background: url(./images/chrome.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.list_browser .safari:before {
+	background: url(./images/safari.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.list_browser .firefox:before {
+	background: url(./images/firefox.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.list_browser .chrome:hover:before {
+	background: url(./images/angry-face-bat.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.list_browser .safari:hover:before {
+	background: url(./images/angry-face-bat.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.list_browser .firefox:hover:before {
+	background: url(./images/angry-face-bat.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box {
+	background: gray;
+	border: 10px solid skyblue;
+	width: 100%;
+}
+.box:before {
+	content: "";
+	display: block;
+	width: 100%;
+	/*padding-top: 100%;*/
+	/* 4:3の比率 */
+	padding-top: 75%; 
+}

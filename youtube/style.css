@@ -56,14 +56,12 @@ body {
 }
 
 /*ロゴ*/
-.area_logo_header .logo {
-	display: block;
-	width: 80px;
-	height: 30px;
-	background: gray;
-}
 .area_logo_header {
+	/*display: flex;
+	align-items: center;*/
 	margin: 0 0 0 10px;
+}
+.area_logo_header .logo {
 }
 
 /*フォームヘッダー*/

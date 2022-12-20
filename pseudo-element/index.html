@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+	<div class="container">
+		<p class="price">
+			100
+			<span>円</span>
+		</p>
+		<p class="price">
+			500
+			<span>円</span>
+		</p>
+		<p class="price">
+			1,000
+			<span>円</span>
+		</p>
+		<hr>
+		<h3>擬似要素を使うと"span"が不要になります</h3>
+		<p class="p_price">
+			100
+		</p>
+		<p class="p_price">
+			500
+		</p>
+		<p class="p_price">
+			1,000
+		</p>
+		<hr>
+		<p class="todo">買い物</p>
+		<p class="todo">運動</p>
+		<p class="todo">勉強</p>
+		<hr>
+		<h3>データ属性について</h3>
+		<h4>「data-〇〇」という属性を用意して、そこに任意の値を設定することができます。</h4>
+		<p data-unit="円">100</p>
+		<p data-unit="人">500</p>
+		<p data-unit="台">1,000</p>
+		<hr>
+		<h3>リストの先頭の要素を、擬似要素を使って書く</h3>
+		<ul class="list_apple">
+			<li>iPhone</li>
+			<li>iMac</li>
+			<li>Macbook</li>
+		</ul>
+		<hr>
+		<h3>アイコンがあるリスト&hover</h3>
+		<ul class="list_browser">
+			<li class="chrome">chrome</li>
+			<li class="safari">safari</li>
+			<li class="firefox">FireFox</li>
+		</ul>
+		<hr>
+		<h3>画像比率の保持</h3>
+		<div class="box"></div>
+
+
+	</div>
+
+	
+</body>
+</html>
