@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li, a {
+	color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+	padding: 80px;
+}
+
+.container {
+	max-width: 1160px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+/*ヘッダーA*/
+.header_a {
+	color: #fff;
+	background: #000;
+}
+.header_a > .container {
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+/*ロゴ*/
+.area_logo_header .logo {
+	display: block;
+}
+.area_logo_header .logo img {
+	height: 25px;
+	vertical-align: bottom;
+}
+
+/*ナビゲーション*/
+.area_nav_header {
+	margin-left: auto;
+}
+
+/*リストナビ */
+.list_nav_header {
+	display: flex;
+	align-items: center;
+}
+.list_nav_header > li + li {
+	margin-left: 40px;
+}
+.list_nav_header a {
+	color: #fff;
+	font: 500 15px/1em 'note sans japanese', sans-serif;
+}
+.list_nav_header .btn_contact {
+	color: #000;
+	display: flex;
+	align-items: center;
+	height: 36px;
+	padding: 0 24px 0 48px;
+	background: #0cf;
+	border-radius: 2px;
+	position: relative;
+}
+.list_nav_header .btn_contact:before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(./cmn/img/ico/ico_mail_black.svg) no-repeat center center;
+	background-size: contain;
+	/*background-color: red;*/
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+
+}

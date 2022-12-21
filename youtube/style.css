@@ -26,8 +26,13 @@ li, a {
 	display: block;
 	width: 28px;
 	height: 28px;
-	border-radius: 50%;
-	background: gray;
+
+	background: url(../pseudo-element/images/chrome.svg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+	/*border-radius: 50%;
+	background: gray;*/
 	position: absolute;
 	top: 50%;
 	left: 15px;
@@ -134,10 +139,11 @@ body {
 
 /*メイン*/
 .main {
-	background: #f9f9f9;
+	background: green;
 	flex: auto;
 	min-width: 10px;
-	padding: 30px;
+	/*padding: 30px;*/
+	padding: 10px 30px 50px 50px;
 }
 .main .box {
 	padding: 30px 0;
@@ -159,7 +165,7 @@ body {
 
 .list_video > li {
 	padding: 8px;
-	width: 25%;
+	width: 30%;
 }
 
 
@@ -180,6 +186,7 @@ body {
 	display: flex;
 	margin: 10px 0 0 ;
 }
+
 .list_video .eye {
 	flex: 0 0 40px;
 	margin: 0 10px 0 0;
@@ -200,8 +207,9 @@ body {
 
 /*テキスト*/
 .list_video .text {
-	flex: auto;	//広がって欲しいのでauto
-	min-width: 10px;
+	/*flex: auto;	//広がって欲しいのでauto*/
+	/*min-width: 10px;*/
+	background: blue;
 }
 .list_video .text .ttl {
 /*2行以上は「...」で表示	*/
