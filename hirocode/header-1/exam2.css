@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li, a {
+	color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+	background: #ccc;
+	height: 100vh;
+}
+.container {
+	max-width: none;
+	padding: 0 35px;
+}
+
+/*ヘッダー全体*/
+.header {
+	background: white
+
+}
+.header .container {
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+/*ロゴ*/
+.area_logo_header {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	/*background: green;*/
+}
+.area_logo_header img {
+	height: 50px;
+	vertical-align: bottom;
+}
+
+/*ナビゲーション*/
+.area_nav_header {
+	/*background: blue;*/
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex: auto;
+}
+
+/*リストナビ*/
+.list_nav_header {
+	/*background: pink;*/
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.list_nav_header > li + li {
+	margin-left: 20px;
+}
+.list_nav_header a {
+	padding: 8px 20px;
+	border-radius: 4px;
+	border: 2px solid gray;
+}
+.list_nav_header a:hover {
+	background: skyblue;
+}
+
+/*ボタンエリア*/
+.area_button_header {
+	/*background: gray;*/
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+/*医師登録ボタン*/
+.area_button_header .register {
+	background: #559BB5;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 8px 20px;
+	border-radius: 4px;
+}
+.area_button_header .register:hover {
+	background: skyblue;
+}
+
+/*バーガーメニュー*/
+.area_button_header .burger {
+	width: 40px;
+	height: 40px;
+	background-size: contain !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+
+}
+.area_button_header .burger {
+	background: url(./images/ico_burger.svg)
+}
+
+/*ナビゲーションメニュー*/
+@media screen and (width < 900px){
+	.list_nav_header {
+		display: none;
+	}
+}
+
+/*バーガーメニュー*/
+@media screen and (width > 899px){
+	.area_button_header .burger {
+		display: none;
+	}
+}
+

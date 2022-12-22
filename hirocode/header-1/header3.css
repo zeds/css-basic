@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li, a {
+	color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+	padding: 80px;
+	background: #ccc;
+	height: 100vh;
+}
+img {
+	vertical-align: bottom;
+}
+.container {
+	max-width: none;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+header + header {
+	margin-top: 50px;
+}
+
+
+.header {
+	background: #fff;
+}
+.header .container {
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+/*ロゴ*/
+.area_logo_header {
+	display: flex;
+	align-items: center;
+}
+.area_logo_header .logo {
+	display: block;
+}
+.area_logo_header .logo img {
+	height: 25px;
+}
+.area_logo_header .copy {
+	font: 300 12px/1em 'noto sans japanese', sans-serif;
+	margin: 0 0 0 30px;
+}
+
+/*ナビゲーション*/
+.area_nav_header {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	flex: auto;
+	left: 0;
+}
+
+/*リストナビ*/
+.list_nav_header {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.list_nav_header > li + li {
+	margin-left: 40px;
+}
+
+/*アイコンリスト*/
+.list_nav_ico_header {
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+	/*margin-left: 25px;*/
+	border-left: 1px solid #ccc;
+}
+/*アイコンの間の隙間*/
+.list_nav_ico_header > li + li {
+	margin-left: 10px;
+}
+
+.list_nav_ico_header a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-size: contain !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+}
+
+/*Search*/
+.list_nav_ico_header .search a {
+	background: url(cmn/img/ico/ico_search.svg)
+}
+/*Heart*/
+.list_nav_ico_header .heart a {
+	background: url(cmn/img/ico/ico_heart.svg)
+}
+/*Cart*/
+.list_nav_ico_header .cart a {
+	background: url(cmn/img/ico/ico_cart.svg)
+}
