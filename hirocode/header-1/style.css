@@ -3,19 +3,19 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 li, a {
 	color: #000;
   text-decoration: none;
   list-style: none;
 }
-
 body {
 	padding: 80px;
 	background: #ccc;
 	height: 100vh;
 }
-
+img {
+	vertical-align: bottom;
+}
 .container {
 	max-width: 1160px;
 	padding: 0 40px;
@@ -99,13 +99,48 @@ header + header {
 	height: 90px;
 	display: flex;
 	align-items: center;
+	max-width: none;
 }
 /*ロゴエリア_b*/
 .area_logo_header_b .logo{
 	display: block;
 }
 .area_logo_header_b .logo img{
-	display: block;
-	height: 10px;
+	height: 60px;
 }
+.area_nav_header_b {
+	margin-left: auto;	
+}
+/*リストナビ上*/
+.list_nav_sub_header_b {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.list_nav_sub_header_b > li + li {
+	margin-left: 40px;
+}
+.list_nav_sub_header_b a {
+	font: 300 13px 'noto sans japanese', sans-serif;
+}
+/*リストナビ下*/
+.list_nav_header_b {
+	display: flex;
+	align-items: center;
+	border-right: 2px solid red;
+}	
+
+.list_nav_header_b a {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 0 30px;
+	border-left: 2px solid red;
+}
+.list_nav_header_b a:hover {
+	background: red;
+}
+
+
+
 
