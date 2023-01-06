@@ -1,0 +1,27 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to left, #00AAFF, #00FF6C);
+}
+.container {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: repeat(5, 100px);
+	/*grid-template-rows: minmax(200px, auto) repeat(5, 100px);*/
+	min-height: 100vh;
+}
+
+.item {
+	width: 80px;
+	height: 80px;
+	background-color: rgba(255, 255, 255, .75);
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 20px;
+}

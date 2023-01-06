@@ -74,10 +74,10 @@ button {
 				button {
 					background: transparent;
 					position: absolute;
-					right: 0;
+					right: 10;
 					width: 32px;
 					height: 32px;
-					color: gray;
+					color: red;
 					padding: 3px;
 				}
 			}
@@ -130,19 +130,18 @@ button {
 	}
 
 	.tab_container {
-		background: blue;
+		background: white;
 		height: 45px;
 		border-bottom: solid;
 		border-color: lightgray;
 		border-width: 1px;
 		position: sticky;
 		top: 64px;
-
 		.tab_pannel {
 			max-width: 1280px;
 			padding: 0 43px;
 			height: 100%;
-			//margin: 0 auto;
+			//background: green;
 			li {
 				display: inline-block;
 				padding: 10px 20px;
@@ -161,8 +160,6 @@ button {
 			li:hover {
 				background: #F2F2F2;
 			}
-
-
 		}
 
 	}
@@ -184,13 +181,22 @@ button {
 				margin-bottom: 20px;
 			}
 			.grid_items {
-				background: red;
+				background: white;
 				width: 100%;
 				height: 500px;
 				display: grid;
 				grid-template-columns: repeat(5, 1fr);
 				grid-column-gap: 20px;
 				grid-row-gap: 20px;
+				.line_wrap {
+					font-size: 14px;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					font-size: 14px;
+				}
+	
 			}
 		}
 	}
@@ -204,4 +210,9 @@ h2 {
 
 h2::first-letter {
 	color: red;
+}
+
+.footer {
+	background: red;
+	height: 200px;
 }
