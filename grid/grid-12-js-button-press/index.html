@@ -5,21 +5,75 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="./styles.css">
-	<script src="./script.js" defer></script>
-
 </head>
 <body>
 	<div class="container">
-		<div class="output">
-			<div data-previous-operand class="previous-operand"></div>
-			<div data-current-operand class="current-operand"></div>
+		<div class="item">
+			ここに計算結果を表示します。
 		</div>
-	  
-		<div class="output">
-			ここに押された番号を表示します
-		</div>
-		<button data-number>1</button>
+		<button class="btn_1">1</button>
+		<button class="btn_2">2</button>
+		<button class="btn_3">3</button>
+		<button class="btn_4">C</button>
+		<button class="btn_5">+</button>
+		<button class="btn_6">=</button>
 	</div>
 </body>
+<script type="text/javascript">
+
+	let output = ''
+	let elem = document.querySelector(".item")
+	elem.innerHTML = `${output}`
+
+	let current_value = 0;
+
+	let btn_1 = document.querySelector(".btn_1")
+	let btn_2 = document.querySelector(".btn_2")
+	let btn_3 = document.querySelector(".btn_3")
+	let btn_4 = document.querySelector(".btn_4")
+	let btn_5 = document.querySelector(".btn_5")
+	let btn_6 = document.querySelector(".btn_6")
+
+	btn_1.addEventListener('click', () => {
+		output += '1'
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+	btn_2.addEventListener('click', () => {
+		output += '2'
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+	btn_3.addEventListener('click', () => {
+		output += '3'
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+	btn_4.addEventListener('click', () => {
+		output = ''
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+	btn_5.addEventListener('click', () => {
+		output += '+'
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+	btn_6.addEventListener('click', () => {
+		let sp = output.split('+')
+		console.log("sp=", sp);
+
+		let sum = 0;
+		for ( let i = 0 ; i < sp.length ; i++ ) {
+			console.log("each=", sp[i])
+			sum += Number(sp[i])
+		}
+
+		output += '=' + sum;
+		elem.innerHTML = `${output}`
+		console.log("current_value=", current_value);
+	})
+
+</script>
+
 </html>

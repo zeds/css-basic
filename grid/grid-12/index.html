@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="output">ここに結果表示</div>
+	<button class="btn_1">1</button>
+	<button class="btn_2">2</button>
+	<button class="btn_3">3</button>
+	<button class="btn_c">C</button>
+	<button class="btn_p">+</button>
+	<button class="btn_s">=</button>
+</body>
+
+<script type="text/javascript">
+
+	//入力中の値を入れておく箱
+	let sum = ''
+	let prev = ''
+
+	let output = document.querySelector('.output')
+	output.innerHTML = 'hoge'
+
+	//ボタンが押された
+	let btn_1 = document.querySelector('.btn_1')
+	btn_1.addEventListener('click', () => {
+		sum += '1'
+		output.innerHTML = sum
+	})
+	let btn_2 = document.querySelector('.btn_2')
+	btn_2.addEventListener('click', () => {
+		sum += '2'
+		output.innerHTML = sum
+	})
+	let btn_3 = document.querySelector('.btn_3')
+	btn_3.addEventListener('click', () => {
+		sum += '3'
+		output.innerHTML = sum
+	})
+	let btn_c = document.querySelector('.btn_c')
+	btn_c.addEventListener('click', () => {
+		sum = ''
+		output.innerHTML = sum
+	})
+
+	//+ボタン
+	let btn_p = document.querySelector('.btn_p')
+	btn_p.addEventListener('click', () => {
+		//if (prev=='+') 
+		sum += '+'
+		output.innerHTML = sum
+	})
+	//=ボタン
+	let btn_s = document.querySelector('.btn_s')
+	btn_s.addEventListener('click', () => {
+		let sp = sum.split('+')
+
+		let total = 0;
+		for ( let i = 0 ; i < sp.length ; i++ ) {
+			console.log("each=", sp[i])
+			total += Number(sp[i])
+		}
+		console.log("total=", total);
+		output.innerHTML = `${total}`
+	})
+</script>
+</html>
