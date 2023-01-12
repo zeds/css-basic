@@ -17,6 +17,7 @@
 		<button class="btn_4">C</button>
 		<button class="btn_5">+</button>
 		<button class="btn_6">=</button>
+		<button class="btn_7">-</button>
 	</div>
 </body>
 <script type="text/javascript">
@@ -33,45 +34,99 @@
 	let btn_4 = document.querySelector(".btn_4")
 	let btn_5 = document.querySelector(".btn_5")
 	let btn_6 = document.querySelector(".btn_6")
+	let btn_7 = document.querySelector(".btn_7")
 
 	btn_1.addEventListener('click', () => {
 		output += '1'
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 	btn_2.addEventListener('click', () => {
 		output += '2'
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 	btn_3.addEventListener('click', () => {
 		output += '3'
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 	btn_4.addEventListener('click', () => {
 		output = ''
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 	btn_5.addEventListener('click', () => {
+		opp = '+'
 		output += '+'
+
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 	btn_6.addEventListener('click', () => {
-		let sp = output.split('+')
-		console.log("sp=", sp);
+		console.log("button presed")
 
-		let sum = 0;
-		for ( let i = 0 ; i < sp.length ; i++ ) {
-			console.log("each=", sp[i])
-			sum += Number(sp[i])
+		let mVal = '';
+		let mSum = 0;
+		let opp = ''
+
+		for (let i=0; i<output.length; i++){
+			console.log("result=", output[i])
+
+
+			console.log("mVal=", mVal);
+			console.log("opp=", opp);
+
+			switch(output[i]){
+				case '+':
+					console.log("+ pressed");
+					if (opp == '+'){
+						mSum += Number(mVal)
+						console.log("dbg-1")
+					}
+					if (opp == '-'){
+						mSum -= Number(mVal)
+						console.log("dbg-2")
+					}
+					if (opp == ''){
+						mSum = Number(mVal)
+						console.log("dbg-3")
+					}
+					console.log("#+# mSum=", mSum);
+					mVal = ''
+					opp = '+'
+					break;
+				case '-':
+					console.log("- pressed");
+					if (opp == '+'){
+						mSum += Number(mVal)
+					}
+					if (opp == '-'){
+						mSum -= Number(mVal)
+					}
+					if (opp == ''){
+						mSum = Number(mVal)
+					}
+					console.log("#-# mSum=", mSum);
+					mVal = ''
+					opp = '-'
+					break;
+				default:
+					console.log("other pressed");
+					mVal += output[i]
+					break;
+			}
+
 		}
 
-		output += '=' + sum;
+
+		//let sum = 0;
+		//for ( let i = 0 ; i < sp.length ; i++ ) {
+		//	console.log("each=", sp[i])
+		//	sum += Number(sp[i])
+		//}
+
+		//output += '=' + sum;
+		//elem.innerHTML = `${output}`
+	})
+	btn_7.addEventListener('click', () => {
+		output += '-'
 		elem.innerHTML = `${output}`
-		console.log("current_value=", current_value);
 	})
 
 </script>
