@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+}
+header {
+	height: 64px;
+	background: gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	height: 100%;
+	width: 100px;
+	background: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	width: 50px;
+	height: 50px;
+	background: red;
+	border-radius: 50%;
+}
+nav {
+	height: 100%;
+	background: green;
+	display: flex;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	height: 100%;
+}
+nav a {
+	background: blue;
+	color: white;
+	padding: 10px 10px;
+	border-radius: 7px;
+}
+li {
+	margin-right: 10px;
+}
+a:hover {
+	background: lightgray;
+}
+.post {
+	width: 61px;
+	height: 36px;
+	background: red;
+}
