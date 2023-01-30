@@ -84,7 +84,7 @@ const ProductList = () => {
 							<label htmlFor={product.id}>{product.attributes.name}</label>
 					  </div>
 					  <button className="trash" onClick={() => deleteProduct({ id: product.id })}>
-							<FontAwesomeIcon icon={faTrash} />
+							<FontAwesomeIcon icon={faTrash} size="6x"/>
 					  </button>
 				 </article>
 			)
